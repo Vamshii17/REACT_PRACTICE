@@ -2,7 +2,6 @@ import ButtonComponent from "./Components/Button/Button.js";
 import FormComponent from "./Components/Forms/Forms.js";
 import ImageComponent from "./Components/Image/Image.js";
 
-
 function Hello(){
   return(
     <div>
