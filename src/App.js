@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import ButtonComponent from "./Components/Button/Button.js";
+import FormComponent from "./Components/Forms/Forms.js";
+import ImageComponent from "./Components/Image/Image.js";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+function Hello(){
+  return(
+    <div>
+      <h1>Hi, I am VamshiKrishna</h1>
+      <FormComponent></FormComponent>
+      <ButtonComponent></ButtonComponent>
+      <br></br>
+      <ImageComponent></ImageComponent>
     </div>
-  );
+  )
 }
 
-export default App;
+export default Hello;
