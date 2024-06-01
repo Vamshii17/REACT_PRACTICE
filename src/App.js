@@ -1,17 +1,34 @@
-import ButtonComponent from "./Components/Button/Button.js";
-import FormComponent from "./Components/Forms/Forms.js";
-import ImageComponent from "./Components/Image/Image.js";
-import ListComponent from "./Components/List/List.js";
-
 function Hello(){
+  const employees=[{
+    name:"Vamshi",
+    role:"Full Stack Developer",
+    salary:200000
+  },{
+    name:"Krishna",
+    role:"React Developer",
+    salary:150000
+  },{
+    name:"Sai",
+    role:"Front End Developer",
+    salary:100000
+  },{
+    name:"Venkat",
+    role:"Back End Developer",
+    salary:150000
+  }]
   return(
-    <div>
-      <h1>Hi, I am VamshiKrishna</h1>
-      <FormComponent></FormComponent>
-      <ButtonComponent></ButtonComponent>
-      <ListComponent></ListComponent>
-      <ImageComponent></ImageComponent>
-    </div>
+    <>
+     {
+      employees.map((eachEmployees)=>{
+        return(
+              <div>
+                <h3>{eachEmployees.name}</h3>
+                <h3>{eachEmployees.salary}</h3>
+              </div>
+            )
+      })
+    }
+    </>
   )
 }
 
