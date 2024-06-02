@@ -1,41 +1,26 @@
 import React from "react"
 import "./style.css"
+import HeadingComponent from "./Components/Class_Component/heading_component";
+import AccordionComponent from "./Components/Accordion/accordion";
+import TableComponent from "./Components/Table/tableBootStrap";
+import navBarComponent from "./Components/Nav_Bar/navBar";
 function Hello(){
-  const iplTeams=[{
-    teamName:"Royal Challengers Bengaluru",
-    playersName:["ViratKohli", " FafduPlessis(c)", " WillJacks", " RajatPatidar", " CameronGreen", " DineshKarthik(wk)", " MahipalLomror", " KarnSharma", " LockieFerguson", " YashDayal", " MdSiraj"]
-  },{
-    teamName:"Chennai Super Kings",
-    playersName:["RuturajGaikwad(c)", " RachinRavindra", " AjinkyaRahane"," DarylMitchell", " RavindraJadeja", " SameerRizvi", " MSDhoni(wk)", " DeepakChahar", " TusharDeshpande", " MaheeshaPathirana", " MustafizarRahman"]
-  },{
-    teamName:"Mumbai Indians",
-    playersName:["RohitSharma", " IshanKishan(wk)", " SuryakumarYadav", " TilakVarma", " HardikPandya", " TimDavid", " MDNabi", " RomarioShepherd", " PiyushChawla", " GeraldCoetzee", " JaspritBumrah"]
-  },{
-    teamName:"Sunrisers Hyderabad",
-    playersName:["TravisHead", " AbhishekSharma", " RahulTripathi", " AidenMarkram", " NitishReddy", " HeinrichKlaasen(wk)", " ShahbazAhmed", " PatCummins(c)", " BhuvneshwarKumar", " JaydevUnadkat", " TNatarajan"]
-  },{
-    teamName:"Kolkata Knight Riders",
-    playersName:["PhilpSalt(wk)", " SunilNarine", " VenkateshIyer", " SheryasIyer", " RinkuSingh", " AndreRussell", " RamandeepSingh", " MitchellStarc", " VaibhavArora", " HarshitRana", " VarunChakaravarthy"]
-  }]
   return(
     <>
-     {
-      iplTeams.map((eachiplTeams)=>{
-        const {teamName, playersName}= eachiplTeams
-        return(
-              <React.Fragment>
-                <center>
-                  <table>
-                    <tr>
-                      <td>{teamName}</td>
-                      <td>{playersName}</td>
-                    </tr>
-                  </table>
-                </center>
-              </React.Fragment>
-            )
-      })
-    }
+    <navBarComponent></navBarComponent>
+    <br></br>
+    <br></br>
+    <AccordionComponent></AccordionComponent>
+    <br></br>
+    <br></br>
+    <TableComponent></TableComponent>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <HeadingComponent></HeadingComponent>
     </>
   )
 }
