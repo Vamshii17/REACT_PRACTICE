@@ -1,30 +1,38 @@
+import React from "react"
+import "./style.css"
 function Hello(){
-  const employees=[{
-    name:"Vamshi",
-    role:"Full Stack Developer",
-    salary:200000
+  const iplTeams=[{
+    teamName:"Royal Challengers Bengaluru",
+    playersName:["ViratKohli", " FafduPlessis(c)", " WillJacks", " RajatPatidar", " CameronGreen", " DineshKarthik(wk)", " MahipalLomror", " KarnSharma", " LockieFerguson", " YashDayal", " MdSiraj"]
   },{
-    name:"Krishna",
-    role:"React Developer",
-    salary:150000
+    teamName:"Chennai Super Kings",
+    playersName:["RuturajGaikwad(c)", " RachinRavindra", " AjinkyaRahane"," DarylMitchell", " RavindraJadeja", " SameerRizvi", " MSDhoni(wk)", " DeepakChahar", " TusharDeshpande", " MaheeshaPathirana", " MustafizarRahman"]
   },{
-    name:"Sai",
-    role:"Front End Developer",
-    salary:100000
+    teamName:"Mumbai Indians",
+    playersName:["RohitSharma", " IshanKishan(wk)", " SuryakumarYadav", " TilakVarma", " HardikPandya", " TimDavid", " MDNabi", " RomarioShepherd", " PiyushChawla", " GeraldCoetzee", " JaspritBumrah"]
   },{
-    name:"Venkat",
-    role:"Back End Developer",
-    salary:150000
+    teamName:"Sunrisers Hyderabad",
+    playersName:["TravisHead", " AbhishekSharma", " RahulTripathi", " AidenMarkram", " NitishReddy", " HeinrichKlaasen(wk)", " ShahbazAhmed", " PatCummins(c)", " BhuvneshwarKumar", " JaydevUnadkat", " TNatarajan"]
+  },{
+    teamName:"Kolkata Knight Riders",
+    playersName:["PhilpSalt(wk)", " SunilNarine", " VenkateshIyer", " SheryasIyer", " RinkuSingh", " AndreRussell", " RamandeepSingh", " MitchellStarc", " VaibhavArora", " HarshitRana", " VarunChakaravarthy"]
   }]
   return(
     <>
      {
-      employees.map((eachEmployees)=>{
+      iplTeams.map((eachiplTeams)=>{
+        const {teamName, playersName}= eachiplTeams
         return(
-              <div>
-                <h3>{eachEmployees.name}</h3>
-                <h3>{eachEmployees.salary}</h3>
-              </div>
+              <React.Fragment>
+                <center>
+                  <table>
+                    <tr>
+                      <td>{teamName}</td>
+                      <td>{playersName}</td>
+                    </tr>
+                  </table>
+                </center>
+              </React.Fragment>
             )
       })
     }
