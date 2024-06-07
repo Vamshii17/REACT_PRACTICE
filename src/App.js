@@ -1,44 +1,33 @@
 import React from "react"
 import "./style.css"
-import HeadingComponent from "./Components/Class_Component/heading_component";
-import AccordionComponent from "./Components/Accordion/accordion";
-import TableComponent from "./Components/Table/tableBootStrap";
-import NavBarComponent from "./Components/Nav_Bar/navBar";
-import CarouselComponent from "./Components/Carousels/Carousels";
-import ProgressBarComponent from "./Components/Progress_Bars/ProgressBars";
-import SpinnerComponent from "./Components/Spinners/SpinnersComponent";
-import ToastComponent from "./Components/Toasts/Toasts_Component";
-import ModalComponent from "./Components/Modals/Modals_Component";
+import ButtonComponent from "./Components/Button/Button"
+import GreetingComponent from "./Components/Greeting/greeting"
+import { propTypes } from "react-bootstrap/esm/Image"
+
 function Hello(){
+  const signIn="Sign In"
+  const signUp="Sign Up"
+  const logIn="Log In"
+  const logUp="Log Up"
   return(
     <>
-    <NavBarComponent></NavBarComponent>
-    <br></br>
-    <br></br>
-    <CarouselComponent></CarouselComponent>
-    <br></br>
-    <br></br>
-    <AccordionComponent></AccordionComponent>
-    <br></br>
-    <br></br>
-    <TableComponent></TableComponent>
-    <br></br>
-    <br></br>
-    <ProgressBarComponent></ProgressBarComponent>
-    <br></br>
-    <br></br>
-    <SpinnerComponent></SpinnerComponent>
-    <br></br>
-    <br></br>
-    <ToastComponent></ToastComponent>
-    <br></br>
-    <br></br>
-    <ModalComponent></ModalComponent>
-    <br></br>
-    <br></br>
-    <HeadingComponent></HeadingComponent>
+      <GreetingComponent>Vamshi</GreetingComponent>
+      <GreetingComponent>
+        <h3>Krishna</h3>
+        <h3>How are you?</h3>
+      </GreetingComponent>
+      <br></br>
+      <br></br>
+      <ButtonComponent text={signIn} textColor={"white"}></ButtonComponent>
+      <br></br>
+      <ButtonComponent text={signUp} textColor={"blue"}></ButtonComponent>
+      <br></br>
+      <ButtonComponent text={logIn} textColor={"orange"}></ButtonComponent>
+      <br></br>
+      <ButtonComponent text={logUp}></ButtonComponent>
     </>
   )
 }
 
 export default Hello;
+

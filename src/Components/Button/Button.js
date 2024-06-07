@@ -1,7 +1,9 @@
-const ButtonComponent = ()=>{
+const ButtonComponent = (prop)=>{
+    console.log(prop)
+    const {text, textColor="yellow"} = prop;
     return(
         <>
-        <button>Sign In</button>
+        <button style={{color: textColor, backgroundColor: "black"}}>{text}</button>
         </>
     )
 }
