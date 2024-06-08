@@ -1,11 +1,15 @@
-const ListComponent = () => {
+const ListComponent = (prop) => {
+    const {list} = prop
     return(
         <div>
             <ol>
-                <li>Apple</li>
-                <li>Banana</li>
-                <li>Car</li>
-                <li>Dog</li>
+                {
+                    list.map((eachPlayer)=>{
+                        return <>
+                        <li>{eachPlayer}</li>
+                        </>
+                    })
+                }
             </ol>
         </div>
     )

@@ -1,4 +1,6 @@
 import Accordion from 'react-bootstrap/Accordion';
+import ListComponent from '../List/List';
+import HeadingComponent from '../Heading/Heading';
 
 const AccordionComponent=()=>{
     const iplTeams=[{
@@ -25,8 +27,12 @@ const AccordionComponent=()=>{
             return(
                 <>
                 <Accordion.Item eventKey={index}>
-                    <Accordion.Header><b>{teamName}</b></Accordion.Header>
-                    <Accordion.Body>{playersName}</Accordion.Body>
+                    <Accordion.Header>
+                      <HeadingComponent title={teamName}></HeadingComponent>
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      <ListComponent list={playersName}></ListComponent>
+                    </Accordion.Body>
                 </Accordion.Item>
                 </>
             )
