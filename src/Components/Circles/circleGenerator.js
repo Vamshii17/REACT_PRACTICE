@@ -4,25 +4,27 @@ import { Component } from "react";
 class CircleGeneratorComponent extends Component{
     state={
         
-        circles:[]
+        circles:[],
+        isCircle: true
     }
     addCircle = () => {
         this.setState({
-            circles:[...this.state.circles, true]
+            circles:[...this.state.circles, this.state.isCircle]
         },
         ()=>{})
     }
     circleClicked = (index) => {
-        const update = false
+        const update = this.state.isCircle
         const updateCircle = this.state.circles.map((eachCir,ind)=>{
-            if(index==ind){
+            if(index===ind){
                 return update
             }else{
                 return eachCir
             }
         })
         this.setState({
-            circles: updateCircle
+            circles: updateCircle,
+            isCircle: !this.state.isCircle
         },
             ()=>{})
     }

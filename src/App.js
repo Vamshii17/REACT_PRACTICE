@@ -3,7 +3,6 @@ import "./style.css"
 import YoutubeButtonComponent from "./Components/YoutubeButton/YoutubeButton"
 import TodoComponent from "./Components/Todo/todo";
 import CircleGeneratorComponent from "./Components/Circles/circleGenerator";
-import CarouselGeneratorComponent from "./Components/Carousels/CarouselGenerator";
 
 function Hello(){
   // const iplTeams=[{
@@ -33,10 +32,6 @@ function Hello(){
       <br></br>
       <br></br>
       <TodoComponent></TodoComponent>
-      <br></br>
-      <br></br>
-      <br></br>
-      <CarouselGeneratorComponent></CarouselGeneratorComponent>
     </>
   )
 }
