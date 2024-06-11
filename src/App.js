@@ -1,8 +1,7 @@
 import React from "react"
 import "./style.css"
-import YoutubeButtonComponent from "./Components/YoutubeButton/YoutubeButton"
-import TodoComponent from "./Components/Todo/todo";
-import CircleGeneratorComponent from "./Components/Circles/circleGenerator";
+import GreetingComponent from"./Components/Greeting/greeting"
+import ButtonComponent from "./Components/Button/Button";
 
 function Hello(){
   // const iplTeams=[{
@@ -23,15 +22,10 @@ function Hello(){
   // }]
   return(
     <>
-      <YoutubeButtonComponent></YoutubeButtonComponent>
-      <br></br>
-      <br></br>
-      <br></br>
-      <CircleGeneratorComponent></CircleGeneratorComponent>
-      <br></br>
-      <br></br>
-      <br></br>
-      <TodoComponent></TodoComponent>
+      <GreetingComponent>
+        <h3>Vamshi</h3>
+      </GreetingComponent>
+      <ButtonComponent text={"Login"}></ButtonComponent>
     </>
   )
 }
