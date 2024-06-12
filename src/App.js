@@ -1,7 +1,9 @@
 import React from "react"
 import "./style.css"
-import GreetingComponent from"./Components/Greeting/greeting"
-import ButtonComponent from "./Components/Button/Button";
+import CarouselsGeneratorComponent from "./Components/Carousels/carouselsGenerator"
+
+
+
 
 function Hello(){
   // const iplTeams=[{
@@ -22,10 +24,7 @@ function Hello(){
   // }]
   return(
     <>
-      <GreetingComponent>
-        <h3>Vamshi</h3>
-      </GreetingComponent>
-      <ButtonComponent text={"Login"}></ButtonComponent>
+    <CarouselsGeneratorComponent></CarouselsGeneratorComponent>
     </>
   )
 }
