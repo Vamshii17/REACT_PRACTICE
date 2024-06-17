@@ -31,6 +31,7 @@ const FilterMethodinTable = () => {
         <table>
             <tr>
                 <th>{"Name"}</th>
+                <th>{"Role"}</th>
                 <th>{"Salary"}</th>
             </tr>
             {
@@ -38,6 +39,7 @@ const FilterMethodinTable = () => {
                 <>
                     <tr>
                         <td>{eachEmployee.name}</td>
+                        <td>{eachEmployee.role}</td>
                         <td>{eachEmployee.salary}</td>
                     </tr>
                 </>

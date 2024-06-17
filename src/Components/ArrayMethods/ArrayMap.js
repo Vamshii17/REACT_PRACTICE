@@ -24,7 +24,8 @@ const MapMethod=()=>{
                 return(
                     <>
                     <h2>{eachEmployee.name}</h2>
-                    <h3>{eachEmployee.salary}</h3>
+                    <h3>{eachEmployee.role}</h3>
+                    <h4>{eachEmployee.salary}</h4>
                     </>
                 )
             })
