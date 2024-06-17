@@ -1,6 +1,8 @@
 import React from "react"
 import "./style.css"
-import CarouselsGeneratorComponent from "./Components/Carousels/carouselsGenerator"
+import ProductListing from "./Components/Product_Listing/product_Listing";
+import ProductListingComponent from "./Components/Product_Listing/Product_Listing_Component";
+import ProductListingUsingSkeletonLoader from "./Components/Product_Listing/ProductListingUsingSkeleton";
 
 
 
@@ -24,7 +26,9 @@ function Hello(){
   // }]
   return(
     <>
-    <CarouselsGeneratorComponent></CarouselsGeneratorComponent>
+    <ProductListing></ProductListing>
+    <ProductListingComponent></ProductListingComponent>
+    <ProductListingUsingSkeletonLoader></ProductListingUsingSkeletonLoader>
     </>
   )
 }

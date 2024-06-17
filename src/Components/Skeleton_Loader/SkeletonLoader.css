@@ -1,0 +1,30 @@
+/* SkeletonLoader.css */
+.skeleton-loader {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f0f0f0;
+}
+
+.skeleton-title, .skeleton-text {
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 4px;
+}
+
+.skeleton-title {
+    width: 60%;
+}
+
+.skeleton-image {
+    height: 150px;
+    background: #e0e0e0;
+    border-radius: 4px;
+}
+
+.skeleton-text {
+    width: 100%;
+}
