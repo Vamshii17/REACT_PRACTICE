@@ -1,8 +1,8 @@
 import React from "react"
 import "./style.css"
-import ProductListing from "./Components/Product_Listing/product_Listing";
-import ProductListingComponent from "./Components/Product_Listing/Product_Listing_Component";
-import ProductListingUsingSkeletonLoader from "./Components/Product_Listing/ProductListingUsingSkeleton";
+import ArrayMethod from "./Components/ArrayMethods/ArrayMap"
+import FilterMethod from "./Components/ArrayMethods/ArrayFilter";
+import FilterMethodinTable from "./Components/ArrayMethods/ArrayFilterinTable";
 
 
 
@@ -26,9 +26,9 @@ function Hello(){
   // }]
   return(
     <>
-    <ProductListing></ProductListing>
-    <ProductListingComponent></ProductListingComponent>
-    <ProductListingUsingSkeletonLoader></ProductListingUsingSkeletonLoader>
+    <ArrayMethod></ArrayMethod>
+    <FilterMethod></FilterMethod>
+    <FilterMethodinTable></FilterMethodinTable>
     </>
   )
 }

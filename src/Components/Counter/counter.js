@@ -6,15 +6,15 @@ class CounterComponent extends Component {
     };
 
     incrementCounter = () => {
-        this.setState(previousValue => ({
-            initialValue: previousValue.initialValue + 1
-        }));
+        this.setState({
+            initialValue: this.state.initialValue + 1
+        });
     };
 
     decrementCounter = () => {
-        this.setState(previousValue => ({
-            initialValue: previousValue.initialValue - 1
-        }));
+        this.setState({
+            initialValue: this.state.initialValue - 1
+        });
     };
 
     render() {
