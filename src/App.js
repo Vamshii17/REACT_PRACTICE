@@ -1,11 +1,6 @@
 import React from "react"
-import "./style.css"
-import ArrayMethod from "./Components/ArrayMethods/ArrayMap"
-import FilterMethod from "./Components/ArrayMethods/ArrayFilter";
-import FilterMethodinTable from "./Components/ArrayMethods/ArrayFilterinTable";
-
-
-
+import ProductLisitingUsingAxois from "./Components/Product_Listing/ProductLisitingUsingAxios";
+import FilterMethodUsingButton from "./Components/ArrayMethods/ArrayFilterUsingButtons";
 
 function Hello(){
   // const iplTeams=[{
@@ -26,9 +21,9 @@ function Hello(){
   // }]
   return(
     <>
-    <ArrayMethod></ArrayMethod>
-    <FilterMethod></FilterMethod>
-    <FilterMethodinTable></FilterMethodinTable>
+    <FilterMethodUsingButton></FilterMethodUsingButton>
+    <br></br>
+    <ProductLisitingUsingAxois></ProductLisitingUsingAxois>
     </>
   )
 }
