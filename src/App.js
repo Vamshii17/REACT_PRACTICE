@@ -24,7 +24,7 @@ function Hello(){
     <>
     <EvenCounter></EvenCounter>
     <UpdatedPhase favcol={"green"}></UpdatedPhase>
-    <MountedPhase favcol={"green"}></MountedPhase>
+    {/* <MountedPhase favcol={"green"}></MountedPhase> */}
     </>
   )
 }
