@@ -1,6 +1,7 @@
 import React from "react"
-import ProductLisitingUsingAxois from "./Components/Product_Listing/ProductLisitingUsingAxios";
-import FilterMethodUsingButton from "./Components/ArrayMethods/ArrayFilterUsingButtons";
+import MountedPhase from "./Components/lifeCycleMethods/mountedPhase";
+import EvenCounter from "./Components/Counter/evenCounter";
+import UpdatedPhase from "./Components/lifeCycleMethods/updatedPhase";
 
 function Hello(){
   // const iplTeams=[{
@@ -21,9 +22,9 @@ function Hello(){
   // }]
   return(
     <>
-    <FilterMethodUsingButton></FilterMethodUsingButton>
-    <br></br>
-    <ProductLisitingUsingAxois></ProductLisitingUsingAxois>
+    <EvenCounter></EvenCounter>
+    <UpdatedPhase favcol={"green"}></UpdatedPhase>
+    <MountedPhase favcol={"green"}></MountedPhase>
     </>
   )
 }
