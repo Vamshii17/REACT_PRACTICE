@@ -40,7 +40,7 @@ class UpdatedPhase extends Component{
     }
     componentDidUpdate (props, state){
         document.title = `React App ${this.state.count}`
-        if(state.count !== this.state.count){
+        if(state.count !== this.state.count){ //if we don't give the condition then the API call runs infinite times
         //this.axiosProducts()
         this.axiosEachRecipe();
         }
