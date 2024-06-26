@@ -14,7 +14,6 @@ class FilteringProducts extends Component {
             .then((response) => {
                 this.setState({
                     productList: response,
-                    filteredProducts: response, // Initialize filteredProducts with all products
                 });
             });
     };
