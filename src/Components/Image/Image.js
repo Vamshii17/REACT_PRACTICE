@@ -5,8 +5,8 @@ class ImageComponent extends Component{
         return(
             <img src={this.props.src} 
             alt="" 
-            width={250} 
-            height={250}>
+            width={200} 
+            height={200}>
             </img>
         )
     }

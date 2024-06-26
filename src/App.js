@@ -1,6 +1,6 @@
 import React from "react"
-import ParentComponent from "./Components/lifeCycleMethods/unmountedPhase/parentComponent";
-import LifeCycleMethods from "./Components/lifeCycleMethods/lifeCycleMethods";
+import FilteringProducts from "./Components/FilteringProducts/filteringProducts";
+
 
 function Hello(){
   // const iplTeams=[{
@@ -21,8 +21,7 @@ function Hello(){
   // }]
   return(
     <>
-    <LifeCycleMethods favcol={"Yellow"} />
-    <ParentComponent />
+    <FilteringProducts />
     </>
   )
 }
