@@ -1,7 +1,6 @@
 import React from "react"
-import MountedPhase from "./Components/lifeCycleMethods/mountedPhase";
-import EvenCounter from "./Components/Counter/evenCounter";
-import UpdatedPhase from "./Components/lifeCycleMethods/updatedPhase";
+import ParentComponent from "./Components/lifeCycleMethods/unmountedPhase/parentComponent";
+import LifeCycleMethods from "./Components/lifeCycleMethods/lifeCycleMethods";
 
 function Hello(){
   // const iplTeams=[{
@@ -22,9 +21,8 @@ function Hello(){
   // }]
   return(
     <>
-    <EvenCounter></EvenCounter>
-    <UpdatedPhase favcol={"green"}></UpdatedPhase>
-    <MountedPhase favcol={"green"}></MountedPhase>
+    <LifeCycleMethods favcol={"Yellow"} />
+    <ParentComponent />
     </>
   )
 }
