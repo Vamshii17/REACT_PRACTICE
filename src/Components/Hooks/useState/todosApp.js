@@ -34,7 +34,7 @@ const TodoApp=()=>{
                         <>
                         <li>{eachFruit}</li>
                         <button onClick={()=>updateFruits(index)}>Update</button>
-                        <button onClick={deleteFruits}>Delete</button>
+                        <button onClick={()=>deleteFruits(index)}>Delete</button>
                         </>
                     )
                 })
