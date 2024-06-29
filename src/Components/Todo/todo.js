@@ -23,7 +23,7 @@ class TodoComponent extends Component{
     updateFruit=(index)=>{
         const random = "eat mango"
         const updatedTodos = this.state.todos.map((eachFruit, ind)=>{
-            if(index==ind){
+            if(index===ind){
                 return random
             }else{
                 return eachFruit

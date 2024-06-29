@@ -1,6 +1,6 @@
 import React from "react"
-import FilteringProducts from "./Components/FilteringProducts/filteringProducts";
-
+import UseStateComponent from "./Components/Hooks/useState/useState";
+import TodoApp from "./Components/Hooks/useState/todosApp";
 
 function Hello(){
   // const iplTeams=[{
@@ -21,7 +21,8 @@ function Hello(){
   // }]
   return(
     <>
-    <FilteringProducts />
+    <TodoApp />
+    {/* <UseStateComponent /> */}
     </>
   )
 }
