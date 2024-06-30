@@ -1,6 +1,7 @@
 import React from "react"
-import UseStateComponent from "./Components/Hooks/useState/useState";
-import TodoApp from "./Components/Hooks/useState/todosApp";
+import UncontrolledForms from "./Components/Forms/uncontrolledForms";
+import UncontrolledRegistrationForm from "./Components/Forms/uncontrolledRegistrationForm";
+import UseRefCounter from "./Components/Hooks/useRef/useRef";
 
 function Hello(){
   // const iplTeams=[{
@@ -21,8 +22,9 @@ function Hello(){
   // }]
   return(
     <>
-    <TodoApp />
-    <UseStateComponent />
+    <UseRefCounter />
+    <UncontrolledForms />
+    <UncontrolledRegistrationForm />
     </>
   )
 }
