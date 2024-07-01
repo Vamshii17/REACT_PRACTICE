@@ -1,19 +1,22 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
-const UseRefCounter=()=>{
-  let ref = useRef(0);
+const UseRefCounter = () => {
+  const ref = useRef(0);
+  const [displayCount, setDisplayCount] = useState(0);
 
   function handleClick() {
-    ref.current = ref.current + 1;
-    alert('You clicked ' + ref.current + ' times!');
+    ref.current += 1;
+    setDisplayCount(ref.current);
   }
 
   return (
     <>
-    <button onClick={handleClick}>
-      Click me!
-    </button>
+      <h3>You clicked {displayCount} times!</h3>
+      <button onClick={handleClick}>
+        Click me!
+      </button>
     </>
   );
 }
+
 export default UseRefCounter;
