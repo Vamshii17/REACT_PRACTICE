@@ -1,7 +1,6 @@
 import React from "react"
-import UncontrolledForms from "./Components/Forms/uncontrolledForms";
-import UncontrolledRegistrationForm from "./Components/Forms/uncontrolledRegistrationForm";
-import UseRefCounter from "./Components/Hooks/useRef/useRef";
+import ControlledForms from "./Components/Forms/controlledForms";
+import ControlledRegistrationForms from "./Components/Forms/controlledRegistrationForm";
 
 function Hello(){
   // const iplTeams=[{
@@ -22,9 +21,8 @@ function Hello(){
   // }]
   return(
     <>
-    <UseRefCounter />
-    <UncontrolledForms />
-    <UncontrolledRegistrationForm />
+    <ControlledRegistrationForms />
+    <ControlledForms />
     </>
   )
 }
