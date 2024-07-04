@@ -23,10 +23,14 @@ function Hello(){
   // }]
   return(
     <>
+    <ProductListingUsingUseEffect />
+    <br></br>
+    <UseEffectUsingVariables />
+    <br></br>
+    <br></br>
+    <ProductListingUsingButtons />
+    <br></br>
     <ProductListingUsingCategories />
-    {/* <ProductListingUsingButtons /> */}
-    {/* <ProductListingUsingUseEffect />
-    <UseEffectUsingVariables /> */}
     </>
   )
 }

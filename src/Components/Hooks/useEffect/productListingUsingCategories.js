@@ -47,7 +47,7 @@ const ProductListingUsingCategories = () => {
 
     return (
         <>
-            <h3>Product Listing</h3>
+            <center><h3>Product Listing</h3></center>
             <div className="button-container">
                 {categories.map((eachCategory) => (
                     <button key={eachCategory} onClick={() => setSelectedCategory(eachCategory)}>
