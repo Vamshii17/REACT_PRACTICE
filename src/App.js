@@ -1,6 +1,8 @@
 import React from "react"
-import ControlledForms from "./Components/Forms/controlledForms";
-import ControlledRegistrationForms from "./Components/Forms/controlledRegistrationForm";
+import ProductListingUsingUseEffect from "./Components/Hooks/useEffect/productListingUsingUseEffect";
+import UseEffectUsingVariables from "./Components/Hooks/useEffect/useEffectUsingVariables";
+import ProductListingUsingButtons from "./Components/Hooks/useEffect/ProductListingUsingButtons";
+import ProductListingUsingCategories from "./Components/Hooks/useEffect/productListingUsingCategories";
 
 function Hello(){
   // const iplTeams=[{
@@ -21,8 +23,10 @@ function Hello(){
   // }]
   return(
     <>
-    <ControlledRegistrationForms />
-    <ControlledForms />
+    <ProductListingUsingCategories />
+    {/* <ProductListingUsingButtons /> */}
+    {/* <ProductListingUsingUseEffect />
+    <UseEffectUsingVariables /> */}
     </>
   )
 }
