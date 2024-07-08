@@ -4,11 +4,13 @@ import "./ProductListing.css";
 import ImageComponent from "../Image/Image";
 import RotatingLineSpinner from "../Spinners/RotatingLineSpinner";
 
-//Example for empty dependency array
 const ProductListingCmp = () => {
     const [products, setProducts] = useState([]);
-
+    const [categories, setCategories] = useState([ "All"])
+    const [filterValue, setFilterValue] = useState("All")
+    const [loading, setLoading] = useState(false)
     useEffect(() => {
+        axiosCategories();
         axiosProducts();
     }, []);
 
@@ -18,6 +20,7 @@ const ProductListingCmp = () => {
             console.log(data, "Data");
             if (status === 200) {
                 setProducts(data);
+                setLoading(false)
             } else {
                 alert("API is not successful");
             }
@@ -26,10 +29,48 @@ const ProductListingCmp = () => {
         }
     };
 
+    const handleChange = (event) => {
+        setLoading(true);
+        const optionSelected = event.target.value;
+        console.log(optionSelected,"handleChange");
+        setFilterValue(optionSelected);
+        axiosFilteredProducts(optionSelected);
+    }
+
+    const axiosFilteredProducts = async (optionSelected) => {
+        if(optionSelected === "All"){
+            axiosProducts()
+        }else{
+            const { data, status} = await axios.get(`https://fakestoreapi.com/products/category/${optionSelected}`)
+            if(status === 200){
+                setProducts(data)
+                setLoading(false)
+            }
+        }
+    }
+
+    const axiosCategories = async () => {
+        const {data, status} = await axios.get("https://fakestoreapi.com/products/categories")
+        if(status === 200){
+            setCategories([...categories,...data])
+        }
+    }
+
     return (
         <>
             <center><h2>Product Listing</h2></center>
-            {products.length > 0 ? (
+            <select onChange={handleChange} value={filterValue}> 
+                {
+                    categories.map(eachCategory=>{
+                        return(
+                        <>
+                            <option value={eachCategory}>{eachCategory}</option>
+                        </>
+                        )
+                    })
+                }
+            </select>
+            {products.length > 0 && !loading ? (
                 <div className="product-listing">
                     {products.map((eachProduct) => (
                         <div className="product-card" key={eachProduct.id}>
