@@ -4,6 +4,7 @@ import AboutScreen from "../Screens/aboutScreen";
 import ContactScreen from "../Screens/contactScreen";
 import SettingScreen from "../Screens/settingScreen";
 import InvalidScreen from "../Screens/invalidScreen";
+import ProductDetailsCmp from "../Components/productListing/productDetails";
 
 
 const NavigationStack = () => {
@@ -18,6 +19,8 @@ const NavigationStack = () => {
                 <Route path="/setting" Component={SettingScreen} />
                 {/* InvalidScreen */}
                 <Route path="*" Component={InvalidScreen} />
+                {/* Dynamic Routes */}
+                <Route path={":category/:productId"} Component={ProductDetailsCmp}/>
             </Routes>
         </BrowserRouter>
         </>
